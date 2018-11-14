@@ -8,7 +8,12 @@ function createDeck(){
     let deck = []
 for (let suitIdx = 0 ; suitIdx < suits.length; suitIdx++){
 for (let valueIdx = 0 ; valueIdx < values.length ; valueIdx++){
-    deck.push(values[valueIdx] + ' of ' +  suits[suitIdx])
+    let card = {
+            suit: suits[suitIdx],
+            value: values[valueIdx]
+
+    }
+    deck.push(card)
 }
 }
 return deck
@@ -33,5 +38,6 @@ let playerCards = [getNextCard() , getNextCard()]
     console.log("You are Dealt")
     console.log("  " + playerCards[0])
     console.log("  " + playerCards[1])
+
 
 
