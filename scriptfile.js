@@ -3,6 +3,8 @@ let values = ['Ace','King','Queen','Jack',
 'Ten','Nine','Eight','Six','Five','Four','Three','Two'
 ]
 
+let textArea = document.getElementById('text-area')
+
 
 function createDeck(){
     let deck = []
@@ -40,6 +42,4 @@ let playerCards = [getNextCard() , getNextCard()]
     console.log("You are Dealt")
     console.log("  " + getCardString(playerCards[0]) )
     console.log("  " + getCardString(playerCards[1]) )
-
-
 
